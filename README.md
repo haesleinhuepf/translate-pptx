@@ -42,6 +42,16 @@ pip install translate-pptx
 
 Please note that you must set an `OPENAI_API_KEY` environment variable to use this tool.
 
+### Using other OpenAI-compatible servers
+
+To use a different OpenAI-compatible server (e.g. a local or institutional LLM server), set these optional environment variables:
+
+* `TRANSLATE_PPTX_BASE_URL`: base URL of the server, e.g. `https://my-server.example.com/v1`
+* `TRANSLATE_PPTX_BASE_API_KEY`: API key used to authenticate at that server
+* `TRANSLATE_PPTX_BASE_MODEL`: name of the model to use; it overrides the default model
+
+If they are not set, the standard OpenAI service and `OPENAI_API_KEY` are used.
+
 ## Contributing
 
 Feedback and contributions are welcome! Just open an issue and let's discuss before you send a pull request.
